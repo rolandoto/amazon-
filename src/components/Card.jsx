@@ -7,10 +7,9 @@ import { MdFavoriteBorder,MdFavorite } from "react-icons/md";
 
 const Card =({product}) => {
     const {objectID,name,image,price,margin} =product
+    const key = `like${objectID}`
     const [storage,setValue]  = Uselocalstorage(key,false)
     const {handFavorite,handelefav} = UseCart()
-
-    const key = `like${objectID}`
 
     const Icom =storage ? <MdFavorite  size={30} />  :  <MdFavoriteBorder size={30} />
     
