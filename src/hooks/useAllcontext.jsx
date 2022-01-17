@@ -4,12 +4,11 @@ import UseConextProvider  from "../context/useContext";
 
 const useAllcontext =()=>{
 
-    const context = useContext(UseConextProvider)
-    const {hits} = context.results
+    const {results} = useContext(UseConextProvider)
+    const {hits} = results
     return {
         hits
     }
-
 }
 
 export default useAllcontext

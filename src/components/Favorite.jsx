@@ -7,7 +7,6 @@ import Lisfovarite from './Listfovorite'
 const Favorite =() =>{
 const {favorite} = UseCart()
 
-
     return (
         <div className='grid-fav'>
             {

@@ -87,9 +87,7 @@ img {
   display: inline-block;
 }
 
-.Icon-clean {
 
-}
 
 .Icon-cart {
   background-position: -10px -240px;
@@ -237,6 +235,8 @@ img {
   width: 100%;
 }
 
+
+
 .Detail-priceContainer {
   align-items: center;
   display: flex;
@@ -353,4 +353,28 @@ img {
   grid-template-rows: 225px 228px;
   grid-template-columns: 4fr 4fr 4fr;
    grid-gap: 1px;
+}
+
+
+.Button-home {
+  cursor: pointer;
+  -webkit-appearance: button;
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: .8rem;
+  box-shadow: 0 0.2rem 0.5rem 0 rgb(213 217 217 / 50%);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+
+}
+
+.IcontInternet {
+    position: fixed;
+    right: 0;
+    left: 200px;
+    top: 200px;
 }

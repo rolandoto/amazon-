@@ -5,7 +5,7 @@ import Icon from "./Icon";
 
 const Search = () => {
     const  {setSearch}  = UseCart()
-
+    
     const searchinput = useRef(null)
 
     const handsearch = useCallback(() =>{

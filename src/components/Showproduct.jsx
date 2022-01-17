@@ -8,8 +8,8 @@ const ShowProdut = ({products}) => {
         <div>
             <div className='ShowProducts'>
             {
-                products.map((product) => (
-                <Card key={product.objectID} product={product} />
+                products.map((product,index) => (
+                <Card key={index} product={product} />
                 ))
             }
             </div>

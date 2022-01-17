@@ -10,7 +10,7 @@ const Card =({product}) => {
     const key = `like${objectID}`
     const [storage,setValue]  = Uselocalstorage(key,false)
     const {handFavorite,handelefav} = UseCart()
-
+    
     const Icom =storage ? <MdFavorite  size={30} />  :  <MdFavoriteBorder size={30} />
     
      const handkile =() => {
@@ -22,7 +22,7 @@ const Card =({product}) => {
            <Link to={`/list/${objectID}`} className='Card-anchor' >
                     <img className='Card-image' src={image} alt={name} loading='lazy' />
                     <span className='Card-text'>{name}</span>
-                    <span className='Card-text'>{price} €</span>
+                    <span className='Card-text'>${price}</span>
             </Link>
             <button className='bord' type='submit' onDoubleClick={handkile}  onClick={() =>storage ?handelefav(product): handFavorite(product) } >
                 {Icom} likes {margin}

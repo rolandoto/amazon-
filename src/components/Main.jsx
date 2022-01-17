@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import  {Router}  from '@reach/router'
 import Detail from '../pages/Detail'
 import  Home  from '../pages/Home'
@@ -7,9 +7,9 @@ import Cart from '../pages/Cart'
 import Favorite from './Favorite'
 import PymentExict from '../pages/Pymentexict'
 
-
 const  Main = () => {
-    return (
+   
+    return  (
         <div className='App'>
                 <Headers />
                     <Router>

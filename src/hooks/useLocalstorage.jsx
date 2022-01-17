@@ -24,15 +24,14 @@ const Uselocalstorage = (key,initalvalue) => {
     }
   }
 
-
-    const dele = (evento) => {
+    const Remove = () => {
         const item =  window.localStorage.removeItem(key)
-        setStorage(!evento)
+        setStorage(null)
         return item ? null: initalvalue
 
     }
    
-  return [storage,setValue,dele]
+  return [storage,setValue,Remove]
 }
 
 
