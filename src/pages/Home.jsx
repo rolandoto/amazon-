@@ -4,15 +4,17 @@ import ShowProdut from '../components/Showproduct'
 import useSearch from '../hooks/Usearch'
 
 const Home = ()=> {
-
-    const {results,loading} = useSearch()
+    const {results,setPage} = useSearch()
     
-    const resultloading = loading ? results  : results
+    const hadnex =()=>{
+        setPage(preve  =>preve+6)
+    }
     
     return (
         <div>
             <Container>
-                 <ShowProdut  products={resultloading} />
+                 <ShowProdut  products={results} />
+                 <button className='Button-home' onClick={hadnex}>cargar mas</button>
             </Container>
         </div>
     )

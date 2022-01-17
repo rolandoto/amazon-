@@ -22,6 +22,7 @@
     "react-placeholder-loading": "^0.5.27",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "search-insights": "2.2.1",
     "web-vitals": "^1.1.2",
     "wouter": "^2.7.5"
   },

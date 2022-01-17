@@ -3,7 +3,6 @@ import { PayPalButton } from 'react-paypal-button'
 import {navigate} from "@reach/router"
 import UseCart from '../hooks/useCart'
 
-
 const Buttonpaypal =()=>{
 
     const {totalprice} = UseCart()

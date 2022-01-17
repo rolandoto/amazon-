@@ -5,7 +5,7 @@ import Price from './price'
 const Liscart =({index,handdelete}) =>{
    
     return (
-        <div>
+        <div key={index.objetID}>
          <div className='CartPage-item' >
           <div className='CartPage-itemInfo'>
           <img className='CartPage-itemImage' src={index.image}   />
