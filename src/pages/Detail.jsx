@@ -6,7 +6,7 @@ import UseCart from "../hooks/useCart";
 import UseConextProvider from '../context/useContext'
 
 const Detail =({id}) => {
-    const {senProduct} = UseAlgolia()
+   // const {senProduct} = UseAlgolia()
     
     const {results} = useContext(UseConextProvider)
    
@@ -14,10 +14,7 @@ const Detail =({id}) => {
 
   const {handcart} = UseCart()
   
-  const handToCart =(event) =>{
-    handcart(event)
-    senProduct(event.objectID)
-  }
+ 
 
     const result = hits.find(index =>  index.objectID ==id)
    
@@ -36,7 +33,7 @@ const Detail =({id}) => {
             {result.price} €
           </span>
         </div>
-        <button className='Detail-addToCart' onClick={handToCart(result)}  >
+        <button className='Detail-addToCart' onClick={() => handcart(result)}  >
           Añadir a la cesta
         </button>
       </Container>

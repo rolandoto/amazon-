@@ -19,6 +19,7 @@ const UseCart = ({id}={})=> {
         qty.cantidad +=1
         qty.price += qty.price
       } else {
+       
        setCarts({
          ...carts,
          cart:[...carts.cart,{...event,cantidad:1}]

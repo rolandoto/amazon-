@@ -35,6 +35,5 @@ export default function useSearch (params = {}) {
     setPage,
     results: results.hits,
     queryID: results.queryID
-    
   }
 }

@@ -10,7 +10,6 @@ const Cart =()=> {
     const {handdelete,carts,acumaldor,totalprice} = UseCart()
     const {cart} = carts
     
-
     if(cart.length ==0) return <EmptyCart />
     
     return(
