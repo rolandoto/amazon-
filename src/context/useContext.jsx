@@ -18,7 +18,7 @@ export const  UseConextProvider =({children}) => {
 
     const t = JSON.parse(item)
 
-    const [results, setResults] = useState(t)
+    const [results, setResults] = useState({ hits:null,queryID:null})
 
     const [carts,setCarts] =useState(state)
     const [favorite,setFavorite] =useState(favorites)
