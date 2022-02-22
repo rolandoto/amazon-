@@ -16,7 +16,7 @@ export const  UseConextProvider =({children}) => {
         
     const item = window.sessionStorage.getItem('token') 
     
-    const t = JSON.parse(item)
+    
 
     const [results, setResults] = useState({hits:null,queryID:null})
 
