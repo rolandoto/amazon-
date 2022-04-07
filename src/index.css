@@ -341,6 +341,7 @@ img {
 
 .bord {
   border: none;
+  background: none;
 }
 
 .flex-navbar {
