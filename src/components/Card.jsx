@@ -11,7 +11,7 @@ const Card =({product}) => {
     const [storage,setValue]  = Uselocalstorage(key,false)
     const {handFavorite,handelefav} = UseCart()
     
-    const Icom =storage ? <MdFavorite  size={30} />  :  <MdFavoriteBorder size={30} />
+    const Icom =storage ? <MdFavorite color="black"  size={30} />  :  <MdFavoriteBorder size={30} color="black" />
     
      const handkile =() => {
         setValue(!storage)
